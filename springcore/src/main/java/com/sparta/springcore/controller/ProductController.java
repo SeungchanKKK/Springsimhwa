@@ -58,6 +58,6 @@ public class ProductController {
     @Secured(UserRoleEnum.Authority.ADMIN)
     @GetMapping("/api/admin/products")
     public List<Product> getAllProducts() {
-        return productService.getALLProducts();
+        return productService.getAllProducts();
     }
 }
